@@ -391,9 +391,9 @@ VALUES ('WW19', 'WW', 'W', 'Nuxt.js'),
         ('WW21', 'WW', 'W', 'Fastify'),
         ('WW22', 'WW', 'W', 'Deno'),
         ('WW23', 'WW', 'W', 'Play Framework'),
-        ('WU24', 'WU', 'W', 'Node.js'),
-        ('WU25', 'WU', 'W', 'Next.js'),
-        ('WU26', 'WU', 'W', 'Phoenix');
+        ('WW24', 'WU', 'W', 'Node.js'),
+        ('WW25', 'WU', 'W', 'Next.js'),
+        ('WW26', 'WU', 'W', 'Phoenix');
         
 -- 7-1. 사용했던 운영체제 (OU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
