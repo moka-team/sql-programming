@@ -308,6 +308,14 @@ VALUES ('PU09', 'PU', 'P', 'Android'),
         ('PU17', 'PU', 'P', 'Slack'),
         ('PU18', 'PU', 'P', 'Windows'),
         ('PU19', 'PU', 'P', 'WordPress');
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('PU20', 'PU', 'P', 'Colocation'),
+		('PU21', 'PU', 'P', 'Firebase'),
+        ('PU22', 'PU', 'P', 'Linode'),
+        ('PU23', 'PU', 'P', 'Managed Hosting'),
+        ('PU24', 'PU', 'P', 'OpenStack'),
+        ('PU25', 'PU', 'P', 'OVH'),
+        ('PU26', 'PU', 'P', 'VMware');
 
 -- 4-2. 개발 작업을 하고 싶은 플랫폼 (PW)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
@@ -332,6 +340,14 @@ VALUES ('PW09', 'PW', 'P', 'Android'),
         ('PW17', 'PW', 'P', 'Slack'),
         ('PW18', 'PW', 'P', 'Windows'),
         ('PW19', 'PW', 'P', 'WordPress');
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('PW20', 'PW', 'P', 'Colocation'),
+		('PW21', 'PW', 'P', 'Firebase'),
+        ('PW22', 'PW', 'P', 'Linode'),
+        ('PW23', 'PW', 'P', 'Managed Hosting'),
+        ('PW24', 'PW', 'P', 'OpenStack'),
+        ('PW25', 'PW', 'P', 'OVH'),
+        ('PW26', 'PW', 'P', 'VMware');
 
 -- 5-1. 사용했던 웹 프레임워크 (WU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
