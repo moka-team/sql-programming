@@ -114,6 +114,12 @@ VALUES ('L', NULL, NULL, '프로그래밍 언어'),
         ('C', NULL, NULL, '클라우드 플랫폼'),
         ('W', NULL, NULL, '웹'),
         ('O', NULL, NULL, '운영체제');
+-- 수정
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('P', NULL, NULL, '플랫폼');
+
+DELETE FROM `tech_common_code` WHERE `code`= 'C';
+
 
 -- L2
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
@@ -121,8 +127,8 @@ VALUES ('LU', 'L', NULL, '사용했던 프로그래밍 언어'),
 		('LW', 'L', NULL, '사용하고 싶은 프로그래밍 언어'),
 		('DU', 'D', NULL, '사용했던 데이터베이스'),
         ('DW', 'D', NULL, '사용하고 싶은 데이터베이스'),
-        ('CU', 'C', NULL, '사용했던 클라우드 플랫폼'),
-        ('CW', 'C', NULL, '사용하고 싶은 클라우드 플랫폼'),
+        ('PU', 'P', NULL, '개발 작업을 했던 플랫폼'),
+        ('PW', 'P', NULL, '개발 작업을 하고 싶은 플랫폼'),
         ('WU', 'W', NULL, '사용했던 웹 프레임워크'),
         ('WW', 'W', NULL, '사용하고 싶은 웹 프레임워크'),
         ('OU', 'O', NULL, '사용했던 운영체제');
@@ -279,27 +285,53 @@ VALUES  ('DW25', 'DW', 'D', 'Google BigQuery');
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
 VALUES  ('DW26', 'DW', 'D', 'CouchDB');
         
--- 4-1. 사용했던 클라우드 플랫폼 (CU)
+-- 4-1. 개발 작업을 했던 플랫폼 (PU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
-VALUES ('CU01', 'CU', 'C', 'AWS'),
-		('CU02', 'CU', 'C', 'Digital Ocean'),
-        ('CU03', 'CU', 'C', 'Google Cloud Platform'),
-        ('CU04', 'CU', 'C', 'Heroku'),
-        ('CU05', 'CU', 'C', 'IBM Cloud or Watson'),
-        ('CU06', 'CU', 'C', 'Microsoft Azure'),
-        ('CU07', 'CU', 'C', 'Oracle Cloud Infrastructure'),
-        ('CU08', 'CU', 'C', 'Other');
+VALUES ('PU01', 'PU', 'P', 'AWS'),
+		('PU02', 'PU', 'P', 'Digital Ocean'),
+        ('PU03', 'PU', 'P', 'Google Cloud Platform'),
+        ('PU04', 'PU', 'P', 'Heroku'),
+        ('PU05', 'PU', 'P', 'IBM Cloud or Watson'),
+        ('PU06', 'PU', 'P', 'Microsoft Azure'),
+        ('PU07', 'PU', 'P', 'Oracle Cloud Infrastructure'),
+        ('PU08', 'PU', 'P', 'Other');
+-- 추가
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('PU09', 'PU', 'P', 'Android'),
+		('PU10', 'PU', 'P', 'Arduino'),
+        ('PU11', 'PU', 'P', 'Docker'),
+        ('PU12', 'PU', 'P', 'iOS'),
+        ('PU13', 'PU', 'P', 'Kubernetes'),
+        ('PU14', 'PU', 'P', 'Linux'),
+        ('PU15', 'PU', 'P', 'MacOS'),
+        ('PU16', 'PU', 'P', 'Raspberry Pi'),
+        ('PU17', 'PU', 'P', 'Slack'),
+        ('PU18', 'PU', 'P', 'Windows'),
+        ('PU19', 'PU', 'P', 'WordPress');
 
--- 4-2. 사용하고 싶은 클라우드 플랫폼 (CW)
+-- 4-2. 개발 작업을 하고 싶은 플랫폼 (PW)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
-VALUES ('CW01', 'CW', 'C', 'AWS'),
-		('CW02', 'CW', 'C', 'Digital Ocean'),
-        ('CW03', 'CW', 'C', 'Google Cloud Platform'),
-        ('CW04', 'CW', 'C', 'Heroku'),
-        ('CW05', 'CW', 'C', 'IBM Cloud or Watson'),
-        ('CW06', 'CW', 'C', 'Microsoft Azure'),
-        ('CW07', 'CW', 'C', 'Oracle Cloud Infrastructure'),
-        ('CW08', 'CW', 'C', 'Other');
+VALUES ('PW01', 'PW', 'P', 'AWS'),
+		('PW02', 'PW', 'P', 'Digital Ocean'),
+        ('PW03', 'PW', 'P', 'Google Cloud Platform'),
+        ('PW04', 'PW', 'P', 'Heroku'),
+        ('PW05', 'PW', 'P', 'IBM Cloud or Watson'),
+        ('PW06', 'PW', 'P', 'Microsoft Azure'),
+        ('PW07', 'PW', 'P', 'Oracle Cloud Infrastructure'),
+        ('PW08', 'PW', 'P', 'Other');
+-- 추가
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('PW09', 'PW', 'P', 'Android'),
+		('PW10', 'PW', 'P', 'Arduino'),
+        ('PW11', 'PW', 'P', 'Docker'),
+        ('PW12', 'PW', 'P', 'iOS'),
+        ('PW13', 'PW', 'P', 'Kubernetes'),
+        ('PW14', 'PW', 'P', 'Linux'),
+        ('PW15', 'PW', 'P', 'MacOS'),
+        ('PW16', 'PW', 'P', 'Raspberry Pi'),
+        ('PW17', 'PW', 'P', 'Slack'),
+        ('PW18', 'PW', 'P', 'Windows'),
+        ('PW19', 'PW', 'P', 'WordPress');
 
 -- 5-1. 사용했던 웹 프레임워크 (WU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
