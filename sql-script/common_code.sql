@@ -369,6 +369,16 @@ VALUES ('WU01', 'WU', 'W', 'Angular/Angular.js'),
         ('WU16', 'WU', 'W', 'Symfony'),
         ('WU17', 'WU', 'W', 'Vue.js'),
         ('WU18', 'WU', 'W', 'Other');
+-- 추가
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('WU19', 'WU', 'W', 'Nuxt.js'),
+        ('WU20', 'WU', 'W', 'Blazor'),
+        ('WU21', 'WU', 'W', 'Fastify'),
+        ('WU22', 'WU', 'W', 'Deno'),
+        ('WU23', 'WU', 'W', 'Play Framework'),
+        ('WU24', 'WU', 'W', 'Node.js'),
+        ('WU25', 'WU', 'W', 'Next.js'),
+        ('WU26', 'WU', 'W', 'Phoenix');
 
 -- 5-2. 사용하고 싶은 웹 프레임워크 (WW)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
@@ -390,6 +400,16 @@ VALUES ('WW01', 'WW', 'W', 'Angular/Angular.js'),
         ('WW16', 'WW', 'W', 'Symfony'),
         ('WW17', 'WW', 'W', 'Vue.js'),
         ('WW18', 'WW', 'W', 'Other');
+-- 추가
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('WW19', 'WW', 'W', 'Nuxt.js'),
+        ('WW20', 'WW', 'W', 'Blazor'),
+        ('WW21', 'WW', 'W', 'Fastify'),
+        ('WW22', 'WW', 'W', 'Deno'),
+        ('WW23', 'WW', 'W', 'Play Framework'),
+        ('WW24', 'WU', 'W', 'Node.js'),
+        ('WW25', 'WU', 'W', 'Next.js'),
+        ('WW26', 'WU', 'W', 'Phoenix');
         
 -- 7-1. 사용했던 운영체제 (OU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
