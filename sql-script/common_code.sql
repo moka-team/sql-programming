@@ -243,6 +243,8 @@ VALUES  ('DU16', 'DU', 'D', 'Microsoft Azure'),
         ('DU24', 'DU', 'D', 'Neo4j');
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
 VALUES  ('DU25', 'DU', 'D', 'Google BigQuery');
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES  ('DU26', 'DU', 'D', 'CouchDB');
 
 -- 3-2. 사용하고 싶은 데이터베이스 (DW)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
@@ -274,6 +276,8 @@ VALUES  ('DW16', 'DW', 'D', 'Microsoft Azure'),
         ('DW24', 'DW', 'D', 'Neo4j');
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
 VALUES  ('DW25', 'DW', 'D', 'Google BigQuery');
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES  ('DW26', 'DW', 'D', 'CouchDB');
         
 -- 4-1. 사용했던 클라우드 플랫폼 (CU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
