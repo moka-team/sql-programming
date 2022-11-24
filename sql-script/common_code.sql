@@ -419,6 +419,8 @@ VALUES ('OU01', 'OU', 'O', 'BSD'),
         ('OU04', 'OU', 'O', 'Windows'),
         ('OU05', 'OU', 'O', 'Windows Subsystem for Linux (WSL)'),
         ('OU06', 'OU', 'O', 'Other');
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('OU07', 'OU', 'O', 'Linux-based');
 
 
 
