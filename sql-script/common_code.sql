@@ -230,6 +230,18 @@ VALUES ('DU01', 'DU', 'D', 'Cassandra'),
         ('DU13', 'DU', 'D', 'Redis'),
         ('DU14', 'DU', 'D', 'SQLite'),
         ('DU15', 'DU', 'D', 'Other');
+-- 추가
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES  ('DU16', 'DU', 'D', 'Microsoft Azure'),
+        ('DU17', 'DU', 'D', 'Amazon RDS/Aurora'),
+        ('DU18', 'DU', 'D', 'Memcached'),
+        ('DU19', 'DU', 'D', 'Google Cloud Storage'),
+        ('DU20', 'DU', 'D', 'Amazon Redshift'),
+        ('DU21', 'DU', 'D', 'Apache Hive'),
+        ('DU22', 'DU', 'D', 'Apache HBase'),
+        ('DU23', 'DU', 'D', 'Amazon DynamoDB'),
+        ('DU24', 'DU', 'D', 'Neo4j');
+
 
 -- 3-2. 사용하고 싶은 데이터베이스 (DW)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
@@ -248,6 +260,17 @@ VALUES ('DW01', 'DW', 'D', 'Cassandra'),
         ('DW13', 'DW', 'D', 'Redis'),
         ('DW14', 'DW', 'D', 'SQLite'),
         ('DW15', 'DW', 'D', 'Other');
+-- 추가
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES  ('DW16', 'DW', 'D', 'Microsoft Azure'),
+        ('DW17', 'DW', 'D', 'Amazon RDS/Aurora'),
+        ('DW18', 'DW', 'D', 'Memcached'),
+        ('DW19', 'DW', 'D', 'Google Cloud Storage'),
+        ('DW20', 'DW', 'D', 'Amazon Redshift'),
+        ('DW21', 'DW', 'D', 'Apache Hive'),
+        ('DW22', 'DW', 'D', 'Apache HBase'),
+        ('DW23', 'DW', 'D', 'Amazon DynamoDB'),
+        ('DW24', 'DW', 'D', 'Neo4j');
         
 -- 4-1. 사용했던 클라우드 플랫폼 (CU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
