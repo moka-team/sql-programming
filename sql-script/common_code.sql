@@ -285,7 +285,7 @@ VALUES  ('DW25', 'DW', 'D', 'Google BigQuery');
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
 VALUES  ('DW26', 'DW', 'D', 'CouchDB');
         
--- 4-1. 사용했던 클라우드 플랫폼 (PU)
+-- 4-1. 개발 작업을 했던 플랫폼 (PU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
 VALUES ('PU01', 'PU', 'P', 'AWS'),
 		('PU02', 'PU', 'P', 'Digital Ocean'),
@@ -295,8 +295,21 @@ VALUES ('PU01', 'PU', 'P', 'AWS'),
         ('PU06', 'PU', 'P', 'Microsoft Azure'),
         ('PU07', 'PU', 'P', 'Oracle Cloud Infrastructure'),
         ('PU08', 'PU', 'P', 'Other');
+-- 추가
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('PU09', 'PU', 'P', 'Android'),
+		('PU10', 'PU', 'P', 'Arduino'),
+        ('PU11', 'PU', 'P', 'Docker'),
+        ('PU12', 'PU', 'P', 'iOS'),
+        ('PU13', 'PU', 'P', 'Kubernetes'),
+        ('PU14', 'PU', 'P', 'Linux'),
+        ('PU15', 'PU', 'P', 'MacOS'),
+        ('PU16', 'PU', 'P', 'Raspberry Pi'),
+        ('PU17', 'PU', 'P', 'Slack'),
+        ('PU18', 'PU', 'P', 'Windows'),
+        ('PU19', 'PU', 'P', 'WordPress');
 
--- 4-2. 사용하고 싶은 클라우드 플랫폼 (PW)
+-- 4-2. 개발 작업을 하고 싶은 플랫폼 (PW)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
 VALUES ('PW01', 'PW', 'P', 'AWS'),
 		('PW02', 'PW', 'P', 'Digital Ocean'),
@@ -306,6 +319,19 @@ VALUES ('PW01', 'PW', 'P', 'AWS'),
         ('PW06', 'PW', 'P', 'Microsoft Azure'),
         ('PW07', 'PW', 'P', 'Oracle Cloud Infrastructure'),
         ('PW08', 'PW', 'P', 'Other');
+-- 추가
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('PW09', 'PW', 'P', 'Android'),
+		('PW10', 'PW', 'P', 'Arduino'),
+        ('PW11', 'PW', 'P', 'Docker'),
+        ('PW12', 'PW', 'P', 'iOS'),
+        ('PW13', 'PW', 'P', 'Kubernetes'),
+        ('PW14', 'PW', 'P', 'Linux'),
+        ('PW15', 'PW', 'P', 'MacOS'),
+        ('PW16', 'PW', 'P', 'Raspberry Pi'),
+        ('PW17', 'PW', 'P', 'Slack'),
+        ('PW18', 'PW', 'P', 'Windows'),
+        ('PW19', 'PW', 'P', 'WordPress');
 
 -- 5-1. 사용했던 웹 프레임워크 (WU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
