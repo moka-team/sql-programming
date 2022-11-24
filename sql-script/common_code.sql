@@ -114,6 +114,12 @@ VALUES ('L', NULL, NULL, '프로그래밍 언어'),
         ('C', NULL, NULL, '클라우드 플랫폼'),
         ('W', NULL, NULL, '웹'),
         ('O', NULL, NULL, '운영체제');
+-- 수정
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('P', NULL, NULL, '플랫폼');
+
+DELETE FROM `tech_common_code` WHERE `code`= 'C';
+
 
 -- L2
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
@@ -126,6 +132,14 @@ VALUES ('LU', 'L', NULL, '사용했던 프로그래밍 언어'),
         ('WU', 'W', NULL, '사용했던 웹 프레임워크'),
         ('WW', 'W', NULL, '사용하고 싶은 웹 프레임워크'),
         ('OU', 'O', NULL, '사용했던 운영체제');
+-- 수정
+INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
+VALUES ('PU', 'P', NULL, '개발 작업을 했던 플랫폼'),
+		('PW', 'P', NULL, '개발 작업을 하고 싶은 플랫폼');
+        
+DELETE FROM `tech_common_code` WHERE `code`= 'CU';
+
+DELETE FROM `tech_common_code` WHERE `code`= 'CW';
 
 -- L3
 -- 2-1. 사용했던 프로그래밍 언어 (LU)
@@ -279,7 +293,7 @@ VALUES  ('DW25', 'DW', 'D', 'Google BigQuery');
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
 VALUES  ('DW26', 'DW', 'D', 'CouchDB');
         
--- 4-1. 사용했던 클라우드 플랫폼 (CU)
+-- 4-1. 사용했던 클라우드 플랫폼 (PU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
 VALUES ('CU01', 'CU', 'C', 'AWS'),
 		('CU02', 'CU', 'C', 'Digital Ocean'),
@@ -289,8 +303,57 @@ VALUES ('CU01', 'CU', 'C', 'AWS'),
         ('CU06', 'CU', 'C', 'Microsoft Azure'),
         ('CU07', 'CU', 'C', 'Oracle Cloud Infrastructure'),
         ('CU08', 'CU', 'C', 'Other');
+-- 수정
+UPDATE `tech_common_code`
+SET `code` = 'PU01',
+	`parent_code` = 'PU',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CU01';
 
--- 4-2. 사용하고 싶은 클라우드 플랫폼 (CW)
+UPDATE `tech_common_code`
+SET `code` = 'PU02',
+	`parent_code` = 'PU',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CU02';
+
+UPDATE `tech_common_code`
+SET `code` = 'PU03',
+	`parent_code` = 'PU',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CU03';
+
+UPDATE `tech_common_code`
+SET `code` = 'PU04',
+	`parent_code` = 'PU',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CU04';
+
+UPDATE `tech_common_code`
+SET `code` = 'PU05',
+	`parent_code` = 'PU',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CU05';
+
+UPDATE `tech_common_code`
+SET `code` = 'PU06',
+	`parent_code` = 'PU',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CU06';
+
+UPDATE `tech_common_code`
+SET `code` = 'PU07',
+	`parent_code` = 'PU',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CU07';
+
+UPDATE `tech_common_code`
+SET `code` = 'PU08',
+	`parent_code` = 'PU',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CU08';
+
+
+-- 4-2. 사용하고 싶은 클라우드 플랫폼 (PW)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
 VALUES ('CW01', 'CW', 'C', 'AWS'),
 		('CW02', 'CW', 'C', 'Digital Ocean'),
@@ -300,6 +363,54 @@ VALUES ('CW01', 'CW', 'C', 'AWS'),
         ('CW06', 'CW', 'C', 'Microsoft Azure'),
         ('CW07', 'CW', 'C', 'Oracle Cloud Infrastructure'),
         ('CW08', 'CW', 'C', 'Other');
+-- 수정
+UPDATE `tech_common_code`
+SET `code` = 'PW01',
+	`parent_code` = 'PW',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CW01';
+
+UPDATE `tech_common_code`
+SET `code` = 'PW02',
+	`parent_code` = 'PW',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CW02';
+
+UPDATE `tech_common_code`
+SET `code` = 'PW03',
+	`parent_code` = 'PW',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CW03';
+
+UPDATE `tech_common_code`
+SET `code` = 'PW04',
+	`parent_code` = 'PW',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CW04';
+
+UPDATE `tech_common_code`
+SET `code` = 'PW05',
+	`parent_code` = 'PW',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CW05';
+
+UPDATE `tech_common_code`
+SET `code` = 'PW06',
+	`parent_code` = 'PW',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CW06';
+
+UPDATE `tech_common_code`
+SET `code` = 'PW07',
+	`parent_code` = 'PW',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CW07';
+
+UPDATE `tech_common_code`
+SET `code` = 'PW08',
+	`parent_code` = 'PW',
+    `grandparent_code` = 'P'
+WHERE `code`= 'CW08';
 
 -- 5-1. 사용했던 웹 프레임워크 (WU)
 INSERT INTO `tech_common_code` (`code`, `parent_code`, `grandparent_code`, `code_name`)
