@@ -28,6 +28,9 @@ VALUES ('S', NULL, '코딩 숙련도'),
         ('G', NULL, '성별'),
         ('R', NULL, '응답 연도'),
         ('A', NULL, '나이');
+-- 추가
+INSERT INTO `profile_common_code` (`code`, `parent_code`, `code_name`)
+VALUES ('P', NULL, '인종');
      
 -- L2
 -- 8. 코딩 숙련도(S)
@@ -76,6 +79,31 @@ VALUES ('A01', 'A', 'Under 18 years old'),
         ('A06', 'A', '55-64 years old'),
         ('A07', 'A', '65 years or older'),
         ('A08', 'A', 'Prefer not to say');
+
+-- 13. 인종(P)
+INSERT INTO `profile_common_code` (`code`, `parent_code`, `code_name`)
+VALUES ('P01', 'P', 'Black or of African descent'),
+		('P02', 'P', 'East Asian'),
+        ('P03', 'P', 'Hispanic or Latino/Latina'),
+        ('P04', 'P', 'Middle Eastern'),
+        ('P05', 'P', 'Native American, Pacific Islander, or Indigenous Australian'),
+        ('P06', 'P', 'South Asian'),
+        ('P07', 'P', 'White or of European descent'),
+        ('P08', 'P', 'Biracial'),
+        ('P09', 'P', 'Multiracial'),
+        ('P10', 'P', "I don't know"),
+        ('P11', 'P', 'I prefer not to answer'),
+        ('P12', 'P', 'Or, in your own words:'),
+        ('P13', 'P', 'Southeast Asian'),
+        ('P14', 'P', 'Asian'),
+        ('P15', 'P', 'Caribbean'),
+        ('P16', 'P', 'Central American'),
+        ('P17', 'P', 'Central Asian'),
+        ('P18', 'P', 'Ethnoreligious group'),
+        ('P19', 'P', 'South American'),
+        ('P20', 'P', 'Indian'),
+        ('P21', 'P', 'Indigenous (such as Native American or Indigenous Australian)');
+        
 
 
 -- 기술 공통코드 (테이블 생성, 제약조건 설정)
